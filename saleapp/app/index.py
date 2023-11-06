@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request
+from flask import render_template, request
 import dao
+from app import app
 
-app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -12,3 +12,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
